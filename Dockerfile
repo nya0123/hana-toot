@@ -6,12 +6,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY bot.py .
 
-ENV MASTODON_URL=""
-ENV ACCESS_TOKEN=""
-ENV TARGET_USER_ID=""
-ENV CHECK_INTERVAL=300
-ENV HTTP_PROXY=""
-ENV HTTPS_PROXY=""
-
 CMD ["python", "bot.py"]
 
