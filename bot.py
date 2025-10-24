@@ -17,8 +17,6 @@ mastodon = Mastodon(
 
 last_checked_id = None
 
-print(f"👀 監視開始: neko")
-
 while True:
     try:
         statuses = mastodon.account_statuses(TARGET_USER_ID, limit=5)
