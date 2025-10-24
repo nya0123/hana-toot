@@ -20,10 +20,11 @@ last_checked_id = None
 while True:
     try:
         statuses = mastodon.account_statuses(TARGET_USER_ID, limit=5)
+        
         for status in statuses:
+            
             if last_checked_id is None:
                 last_checked_id = status["id"]
-                continue
 
             if status["id"] <= last_checked_id:
                 continue
