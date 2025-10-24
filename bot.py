@@ -7,7 +7,7 @@ MASTODON_URL = os.getenv("MASTODON_URL")
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 TARGET_USER_ID = int(os.getenv("TARGET_USER_ID"))
 TARGET_EMOJI = os.getenv("TARGET_EMOJI", ":suzuki_hana:")
-REPLY_TEXT = os.getenv("REPLY_TEXT", "鈴木羽那すき\n シャニマスやってません")
+REPLY_TEXT = os.getenv("REPLY_TEXT", "鈴木羽那すき シャニマスやってません")
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "300"))
 
 mastodon = Mastodon(
