@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/nya0123/hana-toot:master
+    build: .
+    env_file: .env
+    environment:
+      - TZ=Asia/Tokyo
+      - CHECK_INTERVAL=300
+    restart: always
